@@ -1,22 +1,17 @@
-from unittest import case
-
 
 
 def perform_operation(num1, num2, operation):
     match operation:
-        case '+':
+        case 'add':
             return num1 + num2
-        case '-':
+        case 'subtract':
             return num1 - num2
-        case '*':
+        case 'multiply':
             return num1 * num2
-        case '/':
+        case 'divide':
             if num2 == 0:
                 return "Cannot divide by zero."
             else:
                 return num1 / num2
         case _:
             return "Invalid operation."
-
-
-
